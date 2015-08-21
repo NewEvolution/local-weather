@@ -1,4 +1,7 @@
-define(["jquery"],function($) {
+define(function(require) {
+  var $=require("jquery");
+  var template=require("hbs!../templates/displayMain");
+  var handlebars=require("hbs");
   return {
     
     //function to pull from weather app  //
@@ -10,7 +13,7 @@ define(["jquery"],function($) {
         method: "GET"
 
         }).done(function(data) {
- 
+          template(data);
           console.log("data from zipCode function", data);
           return data;
          
