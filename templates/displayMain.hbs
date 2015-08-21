@@ -1,4 +1,8 @@
-<h6> Current Conditions: </h6> <p>{{weather[0].description}}</p>
+<h6> Current Conditions: </h6> <p>
+{{#each weather}}
+{{description}}
+{{/each}}
+</p>
 <h6> Current Temperature: </h6> <p>{{main.temp}}</p>
 <h6> Current Wind Speed: </h6> <p>{{wind}}</p>
 <h6> Current Air Pressure: </h6> <p>{{main.pressure}}</p>
