@@ -20,4 +20,16 @@ requirejs.config({
 // The main function requiring all our anciliary scripts
 requirejs(["dependencies"], 
   function(dependencies){
+  $('#submitButton').on("click", function(){
+    var zipInput = $('#zipInput').val();
+    console.log(zipInput);
+    if(zipInput.length === 5){
+      console.log("yes");
+    }
+    else{
+      console.log("no");
+      $('#message').html("Not zipcode. Please try again.");
+    }
+  });
+
 });
