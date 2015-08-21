@@ -18,8 +18,8 @@ requirejs.config({
 });
 
 // The main function requiring all our anciliary scripts
-requirejs(["dependencies", "returnZip"], 
-  function(dependencies){
+requirejs(["dependencies", "authentication"], 
+  function(dependencies, auth){
   
 
 });
