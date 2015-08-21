@@ -9,7 +9,7 @@ define(function(require) {
       console.log("pulling from api");
       console.log(zipCode);
       $.ajax({
-        url: "http://api.openweathermap.org/data/2.5/weather?zip="+zipCode+",us",
+        url: "http://api.openweathermap.org/data/2.5/weather?zip="+zipCode+",us&units=imperial",
         method: "GET"
 
         }).done(function(data) {
