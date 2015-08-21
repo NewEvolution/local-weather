@@ -1,8 +1,18 @@
-{{#each}}
+<div></div>
+    <ul>{{#list}}
+        
+        {{#weather}}
+            <li> Expect {{weather.description}}
+        {{/weather}}
+        <p>Temperature Range</p>
+        {{#temp}}
+            <li>Low Temp {{temp.min}}</li>
+            <li>High Temp {{temp.max}}</li>
+        {{/temp}}
+        Wind speed: {{speed}}
+        Air Pressure: {{pressure}}
+        </ol>
+    </ul>
 
-<h6>  Conditions: </h6> <p>{{weather[0].description}}</p>
-<h6> Current Temperature: </h6> <p>{{main.temp}}</p>
-<h6> Current Wind Speed: </h6> <p>{{wind}}</p>
-<h6> Current Air Pressure: </h6> <p>{{main.pressure}}</p>
 
  
