@@ -2,12 +2,12 @@
     <ul>{{#list}}
             {{#weather}}
             <p>Conditions</p>
-                <li> Expect {{weather.description}}
+                <li> Expect {{description}}
             {{/weather}}
             <p>Temperature Range</p>
             {{#temp}}
-                <li>Low Temp {{temp.min}}</li>
-                <li>High Temp {{temp.max}}</li>
+                <li>Low Temp {{min}}</li>
+                <li>High Temp {{max}}</li>
             {{/temp}}
             Wind speed: {{speed}}
             Air Pressure: {{pressure}}
