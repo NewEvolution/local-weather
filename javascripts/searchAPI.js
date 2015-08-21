@@ -4,9 +4,10 @@ define(["jquery"],function($) {
     //function to pull from weather app  //
     getWeather: function(zipCode) {
       console.log("pulling from api");
+      console.log(zipCode);
       $.ajax({
         url: "http://api.openweathermap.org/data/2.5/weather?zip="+zipCode+",us",
-        method: "POST"
+        method: "GET"
 
         }).done(function(data) {
  
