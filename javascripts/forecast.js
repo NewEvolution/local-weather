@@ -24,7 +24,7 @@ define(function(require){
     // searchForecast((search.getWeather(zipInput)).name, 7);
     var promise = search.getWeather(zipInput);
     promise.then(function(data){
-      searchForecast(data.name, 3);
+      searchForecast.getForecast(data.name, 7);
     });
   });
 });
