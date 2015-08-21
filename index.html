@@ -8,12 +8,25 @@
     <title>Nashville Software School</title>
   </head>
   <body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+    <div id = "mainInput">
+      <form>
+        <input  id = "zipCodeIn"type= "text" name="zipField" placeholder = "Type a zip code">
+        <button type="button" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    <div id = "weatherMain">
+      
+    </div>
 
-    <input type="text" id="zipInput" placeholder="Enter your zipcode">
-    <button type="button" id="submitButton">Submit</button>
-    <h4 id="message"></h4>
 
-    
+    </div>
+  </div>
+</div>
+
+
     <script data-main="./javascripts/main" src="lib/bower_components/requirejs/require.js"></script>
   </body>
 </html>
