@@ -2,6 +2,8 @@ define(function(require) {
   var $=require("jquery");
   var template=require("hbs!../templates/displayMain");
   var handlebars=require("hbs");
+  var Q = require("q");
+  var deferred = Q.defer();
   return {
     
     //function to pull from weather app  //
@@ -13,11 +15,12 @@ define(function(require) {
         method: "GET"
 
         }).done(function(data) {
-          template(data);
+          $("#weatherMain").html(template(data));
           console.log("data from zipCode function", data);
-          return data;
-         
+          deferred.resolve(data);
       });
+          // return data;
+          return deferred.promise;
     }   
  };
 });

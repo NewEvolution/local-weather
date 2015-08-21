@@ -6,14 +6,16 @@ define(["jquery"],function($) {
       console.log("pulling from api");
       $.ajax({
         url: "http://api.openweathermap.org/data/2.5/forecast?q="+cityName+",us&cnt="+numberDays,
-        method: "POST"
+        method: "GET"
 
         }).done(function(data) {
  
           console.log("data from cityName and numberDays", data);
-          return data;
          
+      }).fail(function(xhr, status, error){
+        console.log(error);
       });
+          return data;
     }   
  };
 });
