@@ -2,8 +2,8 @@ define(function(require){
   var $ = require("jquery");
   var search = require("searchAPI");
   
-  $('#submitButton').on("click", function(){
-    var zipInput = $('#zipInput').val();
+  $('#zipSubmit').on("click", function(){
+    var zipInput = $('#zipCodeIn').val();
     console.log(zipInput);
     if(zipInput.length === 5){
       console.log("yes");
