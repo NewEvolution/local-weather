@@ -1,5 +1,6 @@
 define(function(require){
   var $ = require("jquery");
+  var search = require("searchAPI");
   
   $('#submitButton').on("click", function(){
     var zipInput = $('#zipInput').val();
@@ -11,7 +12,8 @@ define(function(require){
         $('#message').html("Not zipcode. Please try again.");
       } else{
         console.log("is a num");
-        return zipInput;
+        // return zipInput;
+        search.getWeather(zipInput);
       }
     }
     else{
