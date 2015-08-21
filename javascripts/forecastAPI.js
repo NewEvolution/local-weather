@@ -2,15 +2,15 @@ define(["jquery"],function($) {
   return {
     
     //function to pull from weather app  //
-    getWeather: function(zipCode) {
+    getForecast: function(cityName, numberDays) {
       console.log("pulling from api");
       $.ajax({
-        url: "http://api.openweathermap.org/data/2.5/weather?zip="+zipCode+",us",
+        url: "http://api.openweathermap.org/data/2.5/forecast?q="+cityName+",us&cnt="+numberDays,
         method: "POST"
 
         }).done(function(data) {
  
-          console.log("data from zipCode function", data);
+          console.log("data from cityName and numberDays", data);
           return data;
          
       });
