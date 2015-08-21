@@ -1,9 +1,10 @@
-define(["jquery"],function($) {
+define(function(require) {
+  var $ = require("jquery");
+  var template=require("hbs!../templates/displayForecast");
   return {
     
     //function to pull from weather app  //
     getForecast: function(cityName, numberDays) {
-      var template=require("hbs!../templates/displayForecast");
 ///////////////////////////
 
 
