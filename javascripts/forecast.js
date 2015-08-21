@@ -2,16 +2,29 @@ define(function(require){
   var $ = require("jquery");
   var searchForecast = require("forecastAPI");
   var search = require("searchAPI");
+  var Q = require("q");
 
 
 
-  $(document).on("click", "#forecast3d", function(){
+  $("#weatherMain").on("click", "#forecast3d", function(){
+    console.log("clicked");
     var zipInput = $('#zipCodeIn').val();
-    searchForecast((search.getWeather(zipInput)).name, 3);
+    var promiseData = search.getWeather(zipInput);
+    // console.log(promise);
+    promiseData.then(function(data){
+      console.log(data.name);
+      searchForecast.getForecast(data.name, 3);
+      console.log("forecast data", searchForecast.get(data.name, 3));
+    });
   });
 
-  $(document).on("click", "#forecast7d", function(){
+  $("#weatherMain").on("click", "#forecast7d", function(){
+    console.log("clicked");
     var zipInput = $('#zipCodeIn').val();
-    searchForecast((search.getWeather(zipInput)).name, 7);
+    // searchForecast((search.getWeather(zipInput)).name, 7);
+    var promise = search.getWeather(zipInput);
+    promise.then(function(data){
+      searchForecast(data.name, 3);
+    });
   });
 });
