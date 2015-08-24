@@ -1,10 +1,13 @@
 body {
+  background-image: url("http://7-themes.com/data_images/out/61/6978365-blue-sky-clouds.jpg");
   background-color: #90C3D4;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
   font-family: 'Lato', sans-serif;
   color: white;
-  text-shadow: 2 2 3px #FF0000; }
-
-html {
+  text-shadow: 2 2 3px #FF0000;
   text-align: center; }
 
 li {
@@ -29,8 +32,5 @@ li {
   font-size: 2em !important;
   font-style: bold !important;
   font-family: Arial !important; }
-
-.col-md-12 {
-  background-image: url("http://7-themes.com/data_images/out/61/6978365-blue-sky-clouds.jpg"); }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,12 +1,17 @@
 body {
+  background-image: url("http://7-themes.com/data_images/out/61/6978365-blue-sky-clouds.jpg");
   background-color: #90C3D4;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
   font-family: 'Lato', sans-serif;
   color: white;
   text-shadow: 2 2 3px #FF0000;
+  text-align: center;
 }
 
 html{
-  text-align: center;
   // background-color: #33CCFF;
   // background-image: url("https://s.yimg.com/os/mit/media/m/weather/images/fallbacks/lead/cloudy_d-e618500.jpg");
   // background-image: url("http://7-themes.com/data_images/out/45/6924603-clouds-background-hd.jpg");
@@ -48,6 +53,5 @@ li{
   // background-color: #3399FF;
   // background-color: #C8C8C8;
   // background-image: url("http://7-themes.com/data_images/out/45/6924603-clouds-background-hd.jpg");
-  background-image: url("http://7-themes.com/data_images/out/61/6978365-blue-sky-clouds.jpg");
 }
 // #90C3D4
