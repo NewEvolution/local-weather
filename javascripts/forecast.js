@@ -6,6 +6,18 @@ define(function(require){
 
 
 
+  $("#weatherMain").on("click", "#forecast1d", function(){
+    console.log("clicked");
+    var zipInput = $('#zipCodeIn').val();
+    var promiseData = search.getWeather(zipInput);
+    // console.log(promise);
+    promiseData.then(function(data){
+      console.log(data.name);
+      searchForecast.getForecast(data.name, 1);
+      console.log("forecast data", searchForecast.get(data.name, 1));
+    });
+  });
+
   $("#weatherMain").on("click", "#forecast3d", function(){
     console.log("clicked");
     var zipInput = $('#zipCodeIn').val();
