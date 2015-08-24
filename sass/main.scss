@@ -1,7 +1,5 @@
 body {
-  background-image: url("http://7-themes.com/data_images/out/61/6978365-blue-sky-clouds.jpg");
-  background-color: #90C3D4;
-  background-size: cover;
+  background: #90C3D4 url("../images/sky-background.jpg") no-repeat 50% 50% fixed;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -55,3 +53,17 @@ li{
   // background-image: url("http://7-themes.com/data_images/out/45/6924603-clouds-background-hd.jpg");
 }
 // #90C3D4
+
+@media screen and (max-width: 900px) {
+  #weatherMain,
+  #forecastTarget {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #weatherMain,
+  #forecastTarget {
+    width: 95%;
+  }
+}
