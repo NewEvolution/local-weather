@@ -1,16 +1,18 @@
 
-    <ul>{{#each list}}
+    <ul>
+        {{#each list}}
+
+        <h3>Your Forecast</h3> 
+        {{dt}}   
             {{#each weather}}
-            <p>Day {{@index}} Conditions</p>
                 <li> Forecast:  {{description}}
             {{/each}}
 
-            <p>Temperature Range</p>
-                <li>Low Temp {{main.temp_min}}°F</li>
-                <li>High Temp {{main.temp_max}}°F</li>
-                <li> Wind speed: {{wind.speed}} mph</li>
-                <li> Air Pressure: {{main.pressure}} bar</li>
-       {{/each}}
+                <li>Low Temp: {{main.temp_min}}°F</li>
+                <li>High Temp: {{main.temp_max}}°F</li>
+                <li>Wind speed: {{wind.speed}} mph</li>
+                <li>Air Pressure: {{main.pressure}} bar</li>
+        {{/each}}
     </ul>
 
 
