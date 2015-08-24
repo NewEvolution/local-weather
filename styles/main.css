@@ -1,28 +1,11 @@
-<<<<<<< HEAD
 body {
   background-color: #90C3D4;
   font-family: 'Lato', sans-serif;
   color: white;
   text-shadow: 2 2 3px #FF0000; }
 
-h4 {
-  line-height: 1em;
-  font-weight: 700;
-  font-style: italic; }
-
-p {
-  text-indent: 30px; }
-
-li {
-  text-decoration: none; }
-
-input {
-  color: black;
-  margin: 35px; }
-=======
 html {
-  text-align: center;
-  background-color: #90C3D4; }
+  text-align: center; }
 
 li {
   list-style: none; }
@@ -33,7 +16,6 @@ li {
   width: 50%;
   margin: auto;
   color: white;
-  font-family: Montserrat;
   margin-bottom: 20px; }
 
 #forecastTarget {
@@ -41,8 +23,7 @@ li {
   border-radius: 20px;
   width: 50%;
   margin: auto;
-  color: white;
-  font-family: Montserrat; }
+  color: white; }
 
 .big {
   font-size: 2em !important;
@@ -51,6 +32,5 @@ li {
 
 .col-md-12 {
   background-image: url("http://7-themes.com/data_images/out/61/6978365-blue-sky-clouds.jpg"); }
->>>>>>> origin/styles
 
 /*# sourceMappingURL=main.css.map */
