@@ -5,53 +5,53 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif !important;
   color: white;
   text-shadow: 2 2 3px #FF0000;
   text-align: center;
 }
 
-html{
-  // background-color: #33CCFF;
-  // background-image: url("https://s.yimg.com/os/mit/media/m/weather/images/fallbacks/lead/cloudy_d-e618500.jpg");
-  // background-image: url("http://7-themes.com/data_images/out/45/6924603-clouds-background-hd.jpg");
-}
-
-li{
+li {
   list-style: none;
 }
 
-#weatherMain{
-  background-color: #003399;
+.input {
+  color: black;
+}
+
+form {
+  margin: 25px;
+}
+
+ul, li{
+  margin: 0;
+  padding: 0;
+}
+
+.addPadding {
+  padding: 15px 10px 15px 10px;
+  border: 7px solid white;
+  border-radius: 20px;
+}
+
+#weatherMain {
+  background-color: #2959ab;
   border-radius: 20px;
   width: 50%;
   margin: auto;
-  color: white;
   margin-bottom: 20px;
-  // background-image: url("https://s.yimg.com/os/mit/media/m/weather/images/fallbacks/lead/cloudy_d-e618500.jpg");
-
 }
 
-#forecastTarget{
-  // background-color: #CC0000;
-  background-color: #990033;
+#forecastTarget {
+  background-color: #0B2C63;
   border-radius: 20px;
   width: 50%;
-  margin: auto;
-  color: white;
-  // background-image: url("http://theloftytraveler.com/wp-content/uploads/2012/03/stormyWeather.jpg");
+  margin: auto; 
 }
 
-.big{
-  font-size: 2em !important;
+.big {
+  font-size: 1.5em !important;
   font-style: bold !important;
-  font-family: Arial !important;
+  // font-family: Arial !important;
 }
 
-.col-md-12{
-  // background-image: url("https://s.yimg.com/os/mit/media/m/weather/images/fallbacks/lead/cloudy_d-e618500.jpg");
-  // background-color: #3399FF;
-  // background-color: #C8C8C8;
-  // background-image: url("http://7-themes.com/data_images/out/45/6924603-clouds-background-hd.jpg");
-}
-// #90C3D4

@@ -5,7 +5,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif !important;
   color: white;
   text-shadow: 2 2 3px #FF0000;
   text-align: center; }
@@ -13,24 +13,36 @@ body {
 li {
   list-style: none; }
 
+.input {
+  color: black; }
+
+form {
+  margin: 25px; }
+
+ul, li {
+  margin: 0;
+  padding: 0; }
+
+.addPadding {
+  padding: 15px 10px 15px 10px;
+  border: 7px solid white;
+  border-radius: 20px; }
+
 #weatherMain {
-  background-color: #003399;
+  background-color: #2959ab;
   border-radius: 20px;
   width: 50%;
   margin: auto;
-  color: white;
   margin-bottom: 20px; }
 
 #forecastTarget {
-  background-color: #990033;
+  background-color: #0B2C63;
   border-radius: 20px;
   width: 50%;
-  margin: auto;
-  color: white; }
+  margin: auto; }
 
 .big {
-  font-size: 2em !important;
-  font-style: bold !important;
-  font-family: Arial !important; }
+  font-size: 1.5em !important;
+  font-style: bold !important; }
 
 /*# sourceMappingURL=main.css.map */

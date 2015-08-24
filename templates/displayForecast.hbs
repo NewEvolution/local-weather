@@ -1,15 +1,17 @@
-{{#each list}}
-    <h3>Your Forecast</h3>
-    {{dt}}   
-    {{#each weather}}
-        <h5> Forecast:  {{description}}</h5>
-    {{/each}}
+<div class = "addPadding">
+    {{#each list}}
+        <h3>Your Forecast</h3>
+        {{dt}}   
+        {{#each weather}}
+            <h5> Forecast:  {{description}}</h5>
+        {{/each}}
 
-    <p class="big">Temperature Range</p>
-    <ul>
-        <li>Low Temp {{temp.min}}°F</li>
-        <li>High Temp {{temp.max}}°F</li>
-        <li> Wind speed: {{speed}} mph</li>
-        <li> Air Pressure: {{pressure}} bar</li>
-    </ul>
-{{/each}}
+        <h5>Temperature Range</h5>
+        <ul>
+            <li>Low Temp: {{temp.min}}°F</li>
+            <li>High Temp: {{temp.max}}°F</li>
+            <li> Wind speed: {{speed}} mph</li>
+            <li> Air Pressure: {{pressure}} bar</li>
+        </ul>
+    {{/each}}
+</div>
