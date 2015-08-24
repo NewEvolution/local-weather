@@ -1,6 +1,7 @@
 define(function(require) {
   var $=require("jquery");
   var template=require("hbs!../templates/displayMain");
+  var dateFunction = require("convertDate");
   var handlebars=require("hbs");
   var Q = require("q");
   var deferred = Q.defer();
@@ -15,6 +16,7 @@ define(function(require) {
         method: "GET"
 
         }).done(function(data) {
+          data.dt = dateFunction.convertDate(data.dt);
           $("#weatherMain").html(template(data));
           console.log("data from zipCode function", data);
           deferred.resolve(data);

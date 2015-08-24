@@ -1,6 +1,7 @@
 define(function(require) {
   var $ = require("jquery");
   var template=require("hbs!../templates/displayForecast");
+   var dateFunction = require("convertDate"); 
   return {
     
     //function to pull from weather app  //
@@ -15,6 +16,11 @@ define(function(require) {
 
       }).done(function(data) {
         console.log("data from cityName and numberDays", data);
+     
+        for (var i = 0; i < data.list.length; i++) {
+          data.list[i].dt = dateFunction.convertDate (data.list[i].dt);
+        }
+        
         $("#forecastTarget").html(template(data));
       }).fail(function(xhr, status, error){
         console.log(error);

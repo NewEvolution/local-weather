@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,16 +12,19 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <div id = "mainInput">
-            <form>
-              <input  id = "zipCodeIn"type= "text" name="zipField" placeholder = "Type a zip code">
-              <button type="submit" id="zipSubmit" class="btn btn-default">Submit</button>
-            </form>
+          <div class = "main">
+             <div id = "mainInput">
+              <form>
+                <input  id = "zipCodeIn" class = 'input' type= "text" name="zipField" placeholder = "Type a zip code">
+                <button type="submit" id="zipSubmit" class="btn btn-default">Submit</button>
+              </form>
+            </div>
           </div>
-          <div id = "weatherMain"> 
+          <div id = "weatherMain" class = "main"> 
           <!-- Populated by Main Handlebars module -->
           </div>
-          <div id = "forecastTarget"> 
+          <div id = "forecastTarget" class = "target"> 
+
           <!-- Populated by Forecast Handlebars module -->
           </div>
         </div>

@@ -1,10 +1,12 @@
-<h6> Current Conditions: </h6> <p>
+{{dt}}
+<h4> Current Conditions: </h4> <p>
 {{#each weather}}
 {{description}}
 {{/each}}
 </p>
-<h6> Current Temperature: </h6> <p>{{main.temp}} °F</p>
-<h6> Current Wind Speed: </h6> <p>{{wind.speed}} mph</p>
-<h6> Current Air Pressure: </h6> <p>{{main.pressure}} bar</p>
+
+<h4> Current Temperature: </h4> <p>{{main.temp}} °F</p>
+<h4> Current Wind Speed: </h4> <p>{{wind.speed}} mph</p>
+<h4> Current Air Pressure: </h4> <p>{{main.pressure}} bar</p>
 <button id='forecast3d' type="button" class="btn btn-default">3-Day Forecast</button>
 <button id='forecast7d' type="button" class="btn btn-default">7-Day Forecast</button>
