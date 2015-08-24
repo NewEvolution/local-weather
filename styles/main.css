@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-color: #90C3D4;
   font-family: 'Lato', sans-serif;
@@ -18,5 +19,38 @@ li {
 input {
   color: black;
   margin: 35px; }
+=======
+html {
+  text-align: center;
+  background-color: #90C3D4; }
+
+li {
+  list-style: none; }
+
+#weatherMain {
+  background-color: #003399;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+  color: white;
+  font-family: Montserrat;
+  margin-bottom: 20px; }
+
+#forecastTarget {
+  background-color: #990033;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+  color: white;
+  font-family: Montserrat; }
+
+.big {
+  font-size: 2em !important;
+  font-style: bold !important;
+  font-family: Arial !important; }
+
+.col-md-12 {
+  background-image: url("http://7-themes.com/data_images/out/61/6978365-blue-sky-clouds.jpg"); }
+>>>>>>> origin/styles
 
 /*# sourceMappingURL=main.css.map */

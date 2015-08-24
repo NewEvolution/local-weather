@@ -1,19 +1,15 @@
+{{#each list}}
+    <h3>Your Forecast</h3>
+    {{dt}}   
+    {{#each weather}}
+        <h5> Forecast:  {{description}}</h5>
+    {{/each}}
 
+    <p class="big">Temperature Range</p>
     <ul>
-        {{#each list}}
-
-        <h3>Your Forecast</h3> 
-        {{dt}}   
-            {{#each weather}}
-                <li> Forecast:  {{description}}
-            {{/each}}
-
-                <li>Low Temp: {{main.temp_min}}°F</li>
-                <li>High Temp: {{main.temp_max}}°F</li>
-                <li>Wind speed: {{wind.speed}} mph</li>
-                <li>Air Pressure: {{main.pressure}} bar</li>
-        {{/each}}
+        <li>Low Temp {{main.temp_min}}°F</li>
+        <li>High Temp {{main.temp_max}}°F</li>
+        <li> Wind speed: {{wind.speed}} mph</li>
+        <li> Air Pressure: {{main.pressure}} bar</li>
     </ul>
-
-
- 
+{{/each}}
