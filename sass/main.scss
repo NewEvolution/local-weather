@@ -1,0 +1,49 @@
+html{
+  text-align: center;
+  // background-color: #33CCFF;
+  background-color: #90C3D4;
+  // background-image: url("https://s.yimg.com/os/mit/media/m/weather/images/fallbacks/lead/cloudy_d-e618500.jpg");
+  // background-image: url("http://7-themes.com/data_images/out/45/6924603-clouds-background-hd.jpg");
+}
+
+li{
+  list-style: none;
+}
+
+#weatherMain{
+  background-color: #003399;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+  color: white;
+  font-family: Montserrat;
+  margin-bottom: 20px;
+  // background-image: url("https://s.yimg.com/os/mit/media/m/weather/images/fallbacks/lead/cloudy_d-e618500.jpg");
+
+}
+
+#forecastTarget{
+  // background-color: #CC0000;
+  background-color: #990033;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+  color: white;
+  font-family: Montserrat;
+  // background-image: url("http://theloftytraveler.com/wp-content/uploads/2012/03/stormyWeather.jpg");
+}
+
+.big{
+  font-size: 2em !important;
+  font-style: bold !important;
+  font-family: Arial !important;
+}
+
+.col-md-12{
+  // background-image: url("https://s.yimg.com/os/mit/media/m/weather/images/fallbacks/lead/cloudy_d-e618500.jpg");
+  // background-color: #3399FF;
+  // background-color: #C8C8C8;
+  // background-image: url("http://7-themes.com/data_images/out/45/6924603-clouds-background-hd.jpg");
+  background-image: url("http://7-themes.com/data_images/out/61/6978365-blue-sky-clouds.jpg");
+}
+// #90C3D4

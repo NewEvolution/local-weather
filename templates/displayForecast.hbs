@@ -1,11 +1,11 @@
 
     <ul>{{#each list}}
             {{#each weather}}
-            <p>Day {{@index}} Conditions</p>
+            <p class="big">Day {{@index}} Conditions</p>
                 <li> Forecast:  {{description}}
             {{/each}}
 
-            <p>Temperature Range</p>
+            <p class="big">Temperature Range</p>
                 <li>Low Temp {{main.temp_min}}°F</li>
                 <li>High Temp {{main.temp_max}}°F</li>
                 <li> Wind speed: {{wind.speed}} mph</li>
