@@ -4,6 +4,7 @@ define(function(require){
   
   $('#zipSubmit').on("click", function(e){
     e.preventDefault();
+    $("#forecastTarget").html("");
     var zipInput = $('#zipCodeIn').val();
     console.log(zipInput);
     if(zipInput.length === 5){
