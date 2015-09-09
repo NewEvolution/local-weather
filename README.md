@@ -24,5 +24,5 @@ Group project created to explore OAuth providers via Firebase's options, and wor
 - Inside the main repo directory:
  - Run _http-server_
  - Make note of the port number returned after running _http-server_
-- Navigate to http://localhost:<your-port-number>
+- Navigate to http://localhost:[your-port-number]
 - Type in the zip code of a nearby city
